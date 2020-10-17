@@ -1,0 +1,24 @@
+<div class="sidenav">
+    <div class="login-main-text" style="text-align: center;">
+       <h2>Noticias</h2>
+       <img src="../../assets/images/helloworld-e1578763834250.jpeg" alt="" height="70%" width="70%">
+    </div>
+ </div>
+ <div class="main">
+    <div class="col-md-6 col-sm-12">
+       <div class="login-form">
+          <form>
+             <div class="form-group">
+                <label>Email</label>
+                <input  [(ngModel)]="email" type="text" class="form-control" name="email" placeholder="User Name">
+             </div>
+             <div class="form-group">
+                <label>Password</label>
+                <input [(ngModel)]="contrasena"  type="password" class="form-control" name="contrasena" placeholder="Password">
+             </div>
+             <button type="submit" (click)="getLoginUsers(email,contrasena)" class="btn btn-black">Login</button>
+             <button type="submit" class="btn btn-secondary" (click)="registrarse()">Register</button>
+          </form>
+       </div>
+    </div>
+ </div>
